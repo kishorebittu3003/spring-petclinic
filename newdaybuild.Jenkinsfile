@@ -12,9 +12,9 @@ pipeline{
         }
         stage('building_steps'){
             steps{
-               sh 'git checkout newdeveloper'
+               sh 'git checkout krishdevops'
              sh 'git checkout newrelease'
-             sh 'git merge developer --no-ff'
+             sh 'git merge krishdevops --no-ff'
              sh 'git checkout newrelease'
              sh 'git push -u origin newrelease'
              sh 'ls'
